@@ -2,7 +2,8 @@
 
 # Desarrollo de la aplicación web – Bandera de México
 
-# Versión final, con 
+# Versión final, con el commit de "Control de colores verde y rojo de la bandera de méxico" 
+# se puede observar una reescritura sobre el repositorio, adjunto en punto - 11.1 del documento de la actividad
 ## Prompts utilizados en ChatGPT
 
 Durante el desarrollo de la aplicación web se utilizaron diferentes prompts en ChatGPT. Cada uno permitie mejorar progresivamente tanto el funcionamiento como la interfaz de la aplicación, hasta obtener la versión final.
