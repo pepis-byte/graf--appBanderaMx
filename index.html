@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bandera de México - Tonos RGB</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+
+        <h1>Bandera de México - Variación de colores RGB</h1>
+
+        <!-- =========================
+             BANDERA
+             ========================= -->
+
+        <div class="bandera">
+
+            <!-- FRANJA VERDE -->
+            <div id="zonaVerde" class="franja verde"></div>
+
+            <!-- FRANJA BLANCA -->
+            <div class="franja blanco">
+                <img src="img/aguila.png" alt="Escudo de México">
+            </div>
+
+            <!-- FRANJA ROJA -->
+            <div id="zonaRoja" class="franja rojo"></div>
+
+        </div>
+
+
+        <!-- =========================
+             CONTROLES
+             ========================= -->
+
+        <div class="controles">
+
+            <!-- POTENCIÓMETRO VERDE -->
+            <div class="control-color">
+
+                <h3>Tono Verde</h3>
+
+                <div class="control">
+
+                    <span>Oscuro</span>
+
+                    <input
+                        type="range"
+                        id="potVerde"
+                        min="0"
+                        max="255"
+                        value="104">
+
+                    <span>Claro</span>
+
+                </div>
+
+                <p>
+                    Intensidad:
+                    <strong id="valorVerde">104</strong>
+                </p>
+
+                <p>
+                    RGB:
+                    <strong id="rgbVerde">rgb(0, 104, 56)</strong>
+                </p>
+
+            </div>
+
+
+            <!-- POTENCIÓMETRO ROJO -->
+            <div class="control-color">
+
+                <h3>Tono Rojo</h3>
+
+                <div class="control">
+
+                    <span>Oscuro</span>
+
+                    <input
+                        type="range"
+                        id="potRojo"
+                        min="0"
+                        max="255"
+                        value="206">
+
+                    <span>Claro</span>
+
+                </div>
+
+                <p>
+                    Intensidad:
+                    <strong id="valorRojo">206</strong>
+                </p>
+
+                <p>
+                    RGB:
+                    <strong id="rgbRojo">rgb(206, 17, 38)</strong>
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- =========================
+             DESCRIPCIÓN DEL EJERCICIO
+             ========================= -->
+
+        <div class="descripcion">
+
+            <h2>Descripción</h2>
+
+            <p>
+                Esta aplicación web representa la bandera de México
+                y permite modificar la intensidad de sus colores
+                verde y rojo mediante dos controles deslizantes.
+                Cada control funciona como un potenciómetro digital.
+            </p>
+
+            <p>
+                Al modificar el potenciómetro verde, el programa
+                calcula automáticamente los componentes RGB
+                necesarios para conservar una tonalidad verde.
+                De la misma manera, el potenciómetro rojo permite
+                generar diferentes tonalidades de rojo.
+            </p>
+
+        </div>
+
+
+        <!-- =========================
+             INTEGRANTES
+             ========================= -->
+
+        <div class="integrantes">
+
+            <h2>Integrantes</h2>
+
+            <p>  Lizbeidy Martinez Vargas - 24200094</p>
+            <p>  David Medina Moreno - 24200095</p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

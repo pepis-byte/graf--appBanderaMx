@@ -1,0 +1,263 @@
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: #eeeeee;
+
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+/* =========================
+   CONTENEDOR 1
+   ========================= */
+
+.contenedor {
+    width: 90%;
+    max-width: 1200px;
+
+    margin: 40px auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+
+/* =========================
+   BANDERA
+   ========================= */
+
+.bandera {
+    width: 100%;
+    height: 500px;
+
+    display: flex;
+    flex-direction: row;
+
+    border: 2px solid #222222;
+
+    overflow: hidden;
+}
+
+
+/* Las tres franjas ocupan
+   exactamente el mismo espacio */
+
+.franja {
+    flex: 1 1 0;
+
+    width: 33.333333%;
+    height: 100%;
+
+    display: flex;
+
+    justify-content: center;
+    align-items: center;
+
+    min-width: 0;
+}
+
+
+/* =========================
+   COLORES INICIALES
+   ========================= */
+
+.verde {
+    background-color: rgb(0, 104, 56);
+}
+
+.blanco {
+    background-color: rgb(255, 255, 255);
+}
+
+.rojo {
+    background-color: rgb(206, 17, 38);
+}
+
+
+/* =========================
+   ESCUDO
+   ========================= */
+
+.blanco img {
+    width: 70%;
+    height: 70%;
+
+    object-fit: contain;
+}
+
+
+/* =========================
+   CONTROLES
+   ========================= */
+
+.controles {
+    width: 100%;
+
+    display: flex;
+
+    gap: 30px;
+
+    margin-top: 25px;
+}
+
+
+/* Tarjeta de cada color */
+
+.control-color {
+    width: 50%;
+
+    background-color: white;
+
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+
+    padding: 20px;
+
+    text-align: center;
+}
+
+
+.control-color h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+
+    font-size: 22px;
+}
+
+
+/* Potenciómetro */
+
+.control {
+    display: flex;
+
+    align-items: center;
+
+    gap: 15px;
+
+    margin-bottom: 20px;
+}
+
+
+.control span {
+    font-size: 14px;
+
+    font-weight: bold;
+}
+
+
+.control input[type="range"] {
+    flex: 1;
+
+    cursor: pointer;
+}
+
+
+.control-color p {
+    margin: 10px 0;
+
+    font-size: 16px;
+}
+
+
+/* =========================
+   DESCRIPCIÓN
+   ========================= */
+
+.descripcion {
+    margin-top: 30px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+
+.descripcion h2 {
+    margin-top: 0;
+
+    font-size: 22px;
+}
+
+
+.descripcion p {
+    line-height: 1.6;
+
+    color: #444444;
+}
+
+
+/* =========================
+   INTEGRANTES
+   ========================= */
+
+.integrantes {
+    margin-top: 20px;
+
+    padding: 20px;
+
+    background-color: white;
+
+    border: 1px solid #cccccc;
+    border-radius: 8px;
+}
+
+
+.integrantes h2 {
+    margin-top: 0;
+
+    font-size: 22px;
+}
+
+
+.integrantes p {
+    margin: 5px 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .contenedor {
+        width: 95%;
+
+        margin: 20px auto;
+    }
+
+
+    .bandera {
+        height: 350px;
+    }
+
+
+    .controles {
+        flex-direction: column;
+    }
+
+
+    .control-color {
+        width: 100%;
+    }
+
+
+    .blanco img {
+        width: 80%;
+        height: 80%;
+    }
+}
